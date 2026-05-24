@@ -31,7 +31,6 @@
 
 ### 1. Создание дерева каталогов
 
-`cmd
 cd %TEMP%
 md Personal\A1
 md Personal\A2\B1
@@ -42,39 +41,38 @@ md Personal\Hobby
 
 ### 2. Создание B4, B5 и удаление B2
 
-`cmd
 md Personal\A2\B4
 md Personal\A2\B5
 rd Personal\A2\B2
 
 ### 3. Создание файлов в Personal
-`cmd
+
 cd Personal
 copy con Name.txt
 
 Ввести ФИО
-`cmd
+
 copy con Date.txt
 
 Дата рождения 
-`cmd
+
 copy con School.txt
 
 Образовательное учреждение
 
 ### 4. Создание файлов в University
-`cmd
+
 cd University
 copy con Name.txt
 
 Вуз и специальность
-`cmd
+
 copy con Mark.txt
 
 Оценки и суммы баллов
 
 ### 5. Создание файлов в Hobby
-`cmd
+
 cd ..\Hobby
 copy con hobby.txt
 
@@ -82,25 +80,18 @@ copy con hobby.txt
 
 6. Копирование hobby.txt в A2 и переименование
 
-cmd
 
 copy hobby.txt ..\A2
 cd ..\A2
 ren hobby.txt Lab_1.txt
 7. Создание копии и её удаление
 
-cmd
-
 copy Lab_1.txt copy_Lab_1.txt
 del copy_Lab_1.txt
 8. Очистка экрана
 
-cmd
-
 cls
 9. Вывод содержимого файлов Personal
-
-cmd
 
 cd ..
 type Name.txt
@@ -108,35 +99,23 @@ type Date.txt
 type School.txt
 10. Сортировка файлов по имени
 
-cmd
-
 dir /on
 11. Объединение файлов в all.txt
-
-cmd
 
 copy Name.txt+Date.txt+School.txt all.txt
 type all.txt
 12. Добавление года рождения
 
-cmd
-
 echo 2008 >> all.txt
 type all.txt
 13. Копирование all.txt в A1
 
-cmd
-
 copy all.txt A1
 14. Удаление каталогов с буквой А или цифрой 2
-
-cmd
 
 cd ..
 rd /s /q A1 A2
 15. Изменение строки приглашения (Вариант 1)
-
-cmd
 
 prompt $D
 Результат: строка приглашения принимает вид системной даты.
