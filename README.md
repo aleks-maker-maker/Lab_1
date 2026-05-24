@@ -42,8 +42,6 @@
 
 ### 1️⃣ Создание дерева каталогов
 
-Bash
-
 cd %TEMP%
 md Personal\A1
 md Personal\A2\B1
@@ -51,53 +49,42 @@ md Personal\A2\B2
 md Personal\A2\B3
 md Personal\University
 md Personal\Hobby
-2️⃣ Создание B4, B5 и удаление B2
+###2️⃣ Создание B4, B5 и удаление B2
 
-Bash
 
 md Personal\A2\B4
 md Personal\A2\B5
 rd Personal\A2\B2
-3️⃣ Создание файлов в Personal
+###3️⃣ Создание файлов в Personal
 
-Bash
 
 cd Personal
 copy con Name.txt    # ФИО → F6 → Enter
 copy con Date.txt    # Дата рождения → F6 → Enter
 copy con School.txt  # Школа → F6 → Enter
-4️⃣ Создание файлов в University
+###5️⃣ Создание файла в Hobby
 
-Bash
-
-cd University
-copy con Name.txt    # Вуз и специальность → F6 → Enter
-copy con Mark.txt    # Оценки и сумма баллов → F6 → Enter
-5️⃣ Создание файла в Hobby
-
-Bash
 
 cd ..\Hobby
 copy con hobby.txt   # Увлечения → F6 → Enter
-6️⃣ Копирование и переименование
+###6️⃣ Копирование и переименование
 
 Bash
 
 copy hobby.txt ..\A2
 cd ..\A2
 ren hobby.txt Lab_1.txt
-7️⃣ Создание копии и удаление
+###7️⃣ Создание копии и удаление
 
-Bash
 
-copy Lab_1.txt copy_Lab_1.txt
-del copy_Lab_1.txt
-8️⃣ Очистка экрана
+|copy Lab_1.txt copy_Lab_1.txt
+del copy_Lab_1.txt|
+###8️⃣ Очистка экрана
 
 Bash
 
 cls
-9️⃣ Вывод содержимого файлов Personal
+###9️⃣ Вывод содержимого файлов Personal
 
 Bash
 
@@ -105,37 +92,27 @@ cd ..
 type Name.txt
 type Date.txt
 type School.txt
-🔟 Сортировка файлов по имени
+###🔟 Сортировка файлов по имени
 
 Bash
 
 dir /on
-1️⃣1️⃣ Объединение файлов в all.txt
-
-Bash
+###1️⃣1️⃣ Объединение файлов в all.txt
 
 copy Name.txt+Date.txt+School.txt all.txt
 type all.txt
-1️⃣2️⃣ Добавление года рождения
-
-Bash
+###1️⃣2️⃣ Добавление года рождения
 
 echo 2008 >> all.txt
 type all.txt
-1️⃣3️⃣ Копирование all.txt в A1
-
-Bash
+###1️⃣3️⃣ Копирование all.txt в A1
 
 copy all.txt A1
-1️⃣4️⃣ Удаление каталогов с буквой А или цифрой 2
-
-Bash
+###1️⃣4️⃣ Удаление каталогов с буквой А или цифрой 2
 
 cd ..
 rd /s /q A1 A2
-1️⃣5️⃣ Изменение строки приглашения
-
-Bash
+###1️⃣5️⃣ Изменение строки приглашения
 
 prompt $D
 <div align="center">
@@ -152,9 +129,7 @@ prompt $D
 
 📌 Скриншоты добавлены в папку images
 
----
-
-📚 Использованные команды
+###📚 Использованные команды
 
 Команда Назначение
 cd Смена каталога
@@ -172,7 +147,7 @@ prompt Изменение строки приглашения
 
 ---
 
-🎯 Вывод
+###🎯 Вывод
 
 <div align="center">
 
@@ -196,7 +171,7 @@ prompt Изменение строки приглашения
 
 <div align="center">
 
-✅ Лабораторная работа выполнена в полном объёме
+##✅ Лабораторная работа выполнена в полном объёме
 
 </div>
 
