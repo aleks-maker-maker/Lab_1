@@ -30,13 +30,13 @@
 
 ### 1. Создание дерева каталогов
 
-"cd %TEMP%
+cd %TEMP%
 md Personal\A1
 md Personal\A2\B1
 md Personal\A2\B2
 md Personal\A2\B3
 md Personal\University
-md Personal\Hobby"
+md Personal\Hobby
 
 ### 2. Создание B4, B5 и удаление B2
 
