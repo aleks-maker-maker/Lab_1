@@ -121,6 +121,8 @@ prompt $D
 Результат: строка приглашения принимает вид системной даты.
 
 Скриншоты: <img width="1920" height="1080" alt="2026-05-24_19-53-11" src="https://github.com/user-attachments/assets/6eaeccc8-600a-4cc6-99d6-01c372044db5" />
+<img width="1920" height="1080" alt="2026-05-24_19-53-19" src="https://github.com/user-attachments/assets/2220780f-7b17-42d9-bd60-c7e3e3f5dd18" />
+
 
 
 
