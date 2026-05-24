@@ -42,7 +42,8 @@
 
 ### 1️⃣ Создание дерева каталогов
 
-`bash
+Bash
+
 cd %TEMP%
 md Personal\A1
 md Personal\A2\B1
@@ -50,92 +51,154 @@ md Personal\A2\B2
 md Personal\A2\B3
 md Personal\University
 md Personal\Hobby
+2️⃣ Создание B4, B5 и удаление B2
 
-### 2. Создание B4, B5 и удаление B2
+Bash
 
 md Personal\A2\B4
 md Personal\A2\B5
 rd Personal\A2\B2
+3️⃣ Создание файлов в Personal
 
-### 3. Создание файлов в Personal
+Bash
 
 cd Personal
-copy con Name.txt
+copy con Name.txt    # ФИО → F6 → Enter
+copy con Date.txt    # Дата рождения → F6 → Enter
+copy con School.txt  # Школа → F6 → Enter
+4️⃣ Создание файлов в University
 
-Ввести ФИО
-
-copy con Date.txt
-
-Дата рождения 
-
-copy con School.txt
-
-Образовательное учреждение
-
-### 4. Создание файлов в University
+Bash
 
 cd University
-copy con Name.txt
+copy con Name.txt    # Вуз и специальность → F6 → Enter
+copy con Mark.txt    # Оценки и сумма баллов → F6 → Enter
+5️⃣ Создание файла в Hobby
 
-Вуз и специальность
-
-copy con Mark.txt
-
-Оценки и суммы баллов
-
-### 5. Создание файлов в Hobby
+Bash
 
 cd ..\Hobby
-copy con hobby.txt
+copy con hobby.txt   # Увлечения → F6 → Enter
+6️⃣ Копирование и переименование
 
-Увлечения
-
-### 6. Копирование hobby.txt в A2 и переименование
-
+Bash
 
 copy hobby.txt ..\A2
 cd ..\A2
 ren hobby.txt Lab_1.txt
-### 7. Создание копии и её удаление
+7️⃣ Создание копии и удаление
+
+Bash
 
 copy Lab_1.txt copy_Lab_1.txt
 del copy_Lab_1.txt
-8. Очистка экрана
+8️⃣ Очистка экрана
+
+Bash
 
 cls
-### 9. Вывод содержимого файлов Personal
+9️⃣ Вывод содержимого файлов Personal
+
+Bash
 
 cd ..
 type Name.txt
 type Date.txt
 type School.txt
-### 10. Сортировка файлов по имени
+🔟 Сортировка файлов по имени
+
+Bash
 
 dir /on
-### 11. Объединение файлов в all.txt
+1️⃣1️⃣ Объединение файлов в all.txt
+
+Bash
 
 copy Name.txt+Date.txt+School.txt all.txt
 type all.txt
-### 12. Добавление года рождения
+1️⃣2️⃣ Добавление года рождения
+
+Bash
 
 echo 2008 >> all.txt
 type all.txt
-### 13. Копирование all.txt в A1
+1️⃣3️⃣ Копирование all.txt в A1
+
+Bash
 
 copy all.txt A1
-### 14. Удаление каталогов с буквой А или цифрой 2
+1️⃣4️⃣ Удаление каталогов с буквой А или цифрой 2
+
+Bash
 
 cd ..
 rd /s /q A1 A2
-### 15. Изменение строки приглашения (Вариант 1)
+1️⃣5️⃣ Изменение строки приглашения
 
+Bash
 
 prompt $D
-Результат: строка приглашения принимает вид системной даты.
+<div align="center">
 
+✨ Результат: строка приглашения отображает системную дату ✨
+
+</div>
+
+---
+
+📸 Скриншоты
 Скриншоты: <img width="1920" height="1080" alt="2026-05-24_19-53-11" src="https://github.com/user-attachments/assets/6eaeccc8-600a-4cc6-99d6-01c372044db5" />
 <img width="1920" height="1080" alt="2026-05-24_19-53-19" src="https://github.com/user-attachments/assets/2220780f-7b17-42d9-bd60-c7e3e3f5dd18" />
 
+📌 Скриншоты добавлены в папку images
+
+---
+
+📚 Использованные команды
+
+Команда Назначение
+cd Смена каталога
+md / mkdir Создание каталога
+rd / rmdir Удаление каталога
+copy con Создание файла с консоли
+copy Копирование и объединение файлов
+ren Переименование файла
+del Удаление файла
+type Вывод содержимого файла
+echo >> Добавление текста в файл
+dir /on Сортировка файлов по имени
+cls Очистка экрана
+prompt Изменение строки приглашения
+
+---
+
+🎯 Вывод
+
+<div align="center">
+
+В ходе выполнения лабораторной работы были освоены основные команды командной строки Windows.
+Создана структура каталогов и файлов, выполнены операции копирования, перемещения, переименования и удаления.
+Строка приглашения изменена на системную дату согласно варианту 1.
+
+</div>
+
+---
+
+👤 Информация о студенте
+
+Поле Значение
+ФИО Александров Дмитрий
+Группа 28Ипо8481
+Вариант 1
+Дата 23 мая 2026
+
+---
+
+<div align="center">
+
+✅ Лабораторная работа выполнена в полном объёме
+
+</div>
 
 
 
