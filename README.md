@@ -41,6 +41,7 @@
 ## 🚀 Ход выполнения
 
 ### 1️⃣ Создание дерева каталогов
+---
 
 cd %TEMP%
 
@@ -57,6 +58,7 @@ md Personal\University
 md Personal\Hobby
 
 ### 2️⃣ Создание B4, B5 и удаление B2
+---
 
 md Personal\A2\B4
 
@@ -65,6 +67,7 @@ md Personal\A2\B5
 rd Personal\A2\B2
 
 ### 3️⃣ Создание файлов в Personal
+---
 
 cd Personal
 
@@ -75,12 +78,14 @@ copy con Date.txt    # Дата рождения → F6 → Enter
 copy con School.txt  # Школа → F6 → Enter
 
 ### 5️⃣ Создание файла в Hobby
+---
 
 cd ..\Hobby
 
 copy con hobby.txt   # Увлечения → F6 → Enter
 
 ### 6️⃣ Копирование и переименование
+---
 
 copy hobby.txt ..\A2
 
@@ -89,17 +94,19 @@ cd ..\A2
 ren hobby.txt Lab_1.txt
 
 ### 7️⃣ Создание копии и удаление
-
+---
 
 |copy Lab_1.txt copy_Lab_1.txt
 
 del copy_Lab_1.txt|
 
 ### 8️⃣ Очистка экрана
+---
 
 cls
 
 ### 9️⃣ Вывод содержимого файлов Personal
+---
 
 cd ..
 
@@ -110,32 +117,38 @@ type Date.txt
 type School.txt
 
 ### 🔟 Сортировка файлов по имени
+---
 
 dir /on
 
 ### 1️⃣1️⃣ Объединение файлов в all.txt
+---
 
 copy Name.txt+Date.txt+School.txt all.txt
 
 type all.txt
 
 ### 1️⃣2️⃣ Добавление года рождения
+---
 
 echo 2008 >> all.txt
 
 type all.txt
 
 ### 1️⃣3️⃣ Копирование all.txt в A1
+---
 
 copy all.txt A1
 
 ### 1️⃣4️⃣ Удаление каталогов с буквой А или цифрой 2
+---
 
 cd ..
 
 rd /s /q A1 A2
 
 ### 1️⃣5️⃣ Изменение строки приглашения
+---
 
 prompt $D
 
